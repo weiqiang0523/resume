@@ -1,0 +1,128 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{NotoSansSC_external}
+% \usepackage{NotoSerifCJKsc_external}
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{魏强}
+
+\basicInfo{
+  \email{772122679@qq.com} \textperiodcentered\ 
+  \phone{(+86) 155-296-20523} \textperiodcentered\ 
+  \linkedin[陕西西安]{https://www.linkedin.com/in/billryan8}}
+ 
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{北京邮电大学}, 北京}{2013 -- 2017}
+\textit{学士}\ 电子科学与技术
+\textit{主修课程}\ java 程序语言设计、C++、电子电路分析等
+
+\section{\faUsers\ 工作项目经历}
+\datedsubsection{\textbf{中移在线服务有限公司} 北京/郑州}{2017年8月 -- 2019年1月}
+NLP 算法工程师
+\begin{实现垃圾短信和邮件分类算法}
+  \item 基于tfidf/贝叶斯传统机器学习分类算法模型
+  \item 实现随机删除拼接等数据增强方案
+  \item 最终准确率 97%
+\end{itemize}
+
+\begin{智能工单分类和来电原因分析算法调研和实现以及模型封装上线}
+  \item 工单分类及来电原因分析算法主要采用text CNN以及rncc深度学习算法实现分类
+  \item 数据的读取及预测均为多线程,上线主要使用docker,redis,zookeeper,kafka部署
+  \item 最终准确率 90%
+\end{itemize}
+
+\begin{完成短信内容实体识别和信息抽取算法工作}
+  \item 尝试BIEO 标注方案和深度学习方法lstm+crf算法模型和指针抽取两种算法方案
+  \item F1 0.90+
+\end{itemize}
+
+\begin{辅助导航对话系统上线}
+\end{itemize}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+\section{\faUsers\ 竞赛项目经历}
+\begin{\datedsubsection{\textbf{天池 2019 之江杯电商评论观点挖掘} NLP}{top2(共 586 队)}}
+  \item 基于 bert 实现的对商品评论的文本信息实体识别和关系抽取的模型实现，
+  \item 创新在于结合了传统的词向量和 bert 设计了 end2end 的模型
+  \item f1 0.823(解决了一对多和多对一的问题)
+
+\begin{\datedsubsection{\textbf{“数字人体”视觉挑战赛——宫颈癌风险智能诊断} CV}{top2}}
+  \item 算法赛道主要使用的数据增强的方案 base 模型 retinanet，换了各种 bottleneck 多尺度训练
+  \item 量化加速主要使用了VNNI 模型量化，以及模型的剪枝压缩等策略
+  \item 初赛（算法赛道）top10(共 2356 队伍)	复赛模型量化和加速（top2）
+\end{itemize}
+
+\begin{\datedsubsection{\textbf{第二届易观算法大赛——性别年龄预测} 数据挖掘}{top2}}
+\end{itemize}
+
+\begin{\datedsubsection{\textbf{CIKM AnalytiCup 2018 小蜜机器人跨语言文本相似度算法挑战赛} NLP}{top3(共 1629 队)}}
+  \item 主要使用了孪生网络esim变体等深度学习的方法进行语义相似度的算法实现
+  \item 赛道中唯一使用迁移学习的team（跨语言模型迁移学习）
+  \item logloss 0.37539
+\end{itemize}
+
+\begin{\datedsubsection{\textbf{OGeek 算法挑战赛} CTR}{季军(共 2888 队)}}
+  \item 实现ctr的 deepFM 网络算法实现
+  \item 采用了Lightgbm以及deepFM 进行模型融合
+  \item f1 0.7469
+\end{itemize}
+
+\begin{\datedsubsection{\textbf{第三届阿里云安全算法挑战赛} 数据挖掘}{top3(共 622 队)}}
+  \item 借用了文本的经验和处理方案，整理数据为文本挖掘更深层次的深度特征
+  \item 使用传统机器学习算法 lightgbm 以及空洞卷积算法进行分类，空洞卷积使网络的感应域更宽更广
+  \item logloss 0.441981
+\end{itemize}
+
+\begin{\datedsubsection{\textbf{智慧海洋建设算法赛} 数据挖掘}{top5(共 3275 队)}}
+  \item 借用了文本的经验和处理方案，挖掘数据的word2vec语义特征
+  \item 使用传统机器学习算法 lightgbm 单模型未进行模型融合
+  \item f1 0.8990
+\end{itemize}
+
+\begin{\datedsubsection{\textbf{SMP EUPT 2018} NLP}{top6}}
+\end{itemize}
+\begin{\datedsubsection{\textbf{莱斯杯：全国第二届“军事智能机器阅读”挑战赛} NLP}{top7(共 850 队)}}
+\end{itemize}
+\begin{\datedsubsection{\textbf{第三届魔境杯数据应用大赛} NLP}{top7(共 576 队)}}
+\end{itemize}
+\begin{\datedsubsection{\textbf{天池 2018 之江杯视频识别&问答挑战赛} CV}{top8(共 934 队)}}
+\end{itemize}
+\begin{\datedsubsection{\textbf{达官杯文本智能信息抽取挑战赛} NLP}{top8(共 934 队)}}
+\end{itemize}
+
+\section{\faCogs\ 技能/证书及其他}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 编程语言: Python > Java = C
+  \item 编程语言 python,tensorflow、pytorch、keras 三年开发经验，熟悉主流深度开发框架
+  \item 熟练掌握 centos/Ubuntu 等 linux 开发系统应用
+  \item 天池：数据科学家	kaggle：kaggle master 
+\end{itemize}
+
+\section{\faInfo\ 个人}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 有极强的学习能力，团队合作能力强，有较强的沟通能力
+  \item GitHub: https://github.com/Ai-Light
+  \item 个人公众号：AILIGHT
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
